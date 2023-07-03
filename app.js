@@ -7,9 +7,9 @@ store.subscribe(()=>{
     console.log("Updated value = ",store.getState());
 })
 
-store.dispatch(increment())
-store.dispatch(increment())
-store.dispatch(increment())
+store.dispatch(increment(1000))
+store.dispatch(increment(10))
+store.dispatch(increment(10))
 
-store.dispatch(decrement());
+store.dispatch(decrement(20));
 store.dispatch(reset());

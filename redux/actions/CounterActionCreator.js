@@ -2,14 +2,16 @@ import { INCREMENT,DECREMENT,RESET } from "./actionTypes.js";
 
 // action object creaation // means what actions to do 
 
-export const increment =()=>{
+export const increment =(value)=>{
     return {
-        type:INCREMENT
+        type:INCREMENT,
+        value:value
     }
 }
-export const decrement =()=>{
+export const decrement =(value)=>{
     return {
-        type:DECREMENT
+        type:DECREMENT,
+        value:value
     }
 }
 export const reset =()=>{
